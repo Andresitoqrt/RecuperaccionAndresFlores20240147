@@ -39,7 +39,7 @@ public class PeliculaService {
             throw new ExceptionPeliculaDontRegister("Pelicula no pudo ser registrada");
         }
     }
-    public PeliculaDTO update(Long id, @Valid PeliculaDTO titulo) {
+    public PeliculaDTO update(Long id, @Valid PeliculaDTO json) {
 
     }
 
@@ -48,6 +48,7 @@ public class PeliculaService {
 
     private PeliculaDTO ConvertirADTO(PeliculaEntity objEntity) {
     PeliculaDTO dto = new PeliculaDTO();
+    dto.
 
     }
 

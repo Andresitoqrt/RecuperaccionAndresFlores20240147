@@ -12,6 +12,7 @@ import lombok.ToString;
 @EqualsAndHashCode
 public class PeliculaDTO {
 
+
     private Long ID;
     @NotBlank(message = "El titulo tiene que ser obligatorio")
     private String TiTULO;

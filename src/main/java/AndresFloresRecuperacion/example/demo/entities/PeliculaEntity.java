@@ -1,12 +1,10 @@
 package AndresFloresRecuperacion.example.demo.entities;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotBlank;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-import org.springframework.data.annotation.Id;
 
 @Entity
 @Getter@Setter
@@ -14,19 +12,14 @@ import org.springframework.data.annotation.Id;
 @Table(name = "peliculas")
 public class PeliculaEntity {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_peliculas_id")
-    @SequenceGenerator(sequenceName = "seq_peliculas_id", name = "seq_peliculas_id", allocationSize = 1)
     @Column(name = "IDPELICULA")
-    private Long Id;
+    public Long Id;
     @Column(name = "TITULONOMBRE")
-    private String TiTULO;
+    public String TiTULO;
     @Column(name = "DIRECTOR")
-    private String DIRECTOR;
+    public String DIRECTOR;
     @Column(name = "Año")
-    private Long Año;
+    public Long Año;
     @Column(name = "GENERO")
-    private String GENERO;
-    @Column(name = "PUNTUACION")
-    private Long PUNTUACION;
+    public String GENERO;
 }
